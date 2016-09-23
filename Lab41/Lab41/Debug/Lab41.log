@@ -1,0 +1,4 @@
+﻿  lab41Source.cpp
+c:\users\jvarg\onedrive\documents\visual studio 2015\projects\lab41\lab41\lab41source.cpp(45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Lab41.vcxproj -> C:\Users\jvarg\OneDrive\Documents\Visual Studio 2015\Projects\Lab41\Debug\Lab41.exe
+  Lab41.vcxproj -> C:\Users\jvarg\OneDrive\Documents\Visual Studio 2015\Projects\Lab41\Debug\Lab41.pdb (Full PDB)

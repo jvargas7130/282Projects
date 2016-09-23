@@ -1,0 +1,7 @@
+﻿  lab31Source.cpp
+c:\users\jvarg\onedrive\documents\visual studio 2015\projects\lab31\lab31\lab31source.cpp(59): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\jvarg\onedrive\documents\visual studio 2015\projects\lab31\lab31\lab31source.cpp(60): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\jvarg\onedrive\documents\visual studio 2015\projects\lab31\lab31\lab31source.cpp(74): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\jvarg\onedrive\documents\visual studio 2015\projects\lab31\lab31\lab31source.cpp(75): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  lab31.vcxproj -> C:\Users\jvarg\OneDrive\Documents\Visual Studio 2015\Projects\lab31\Debug\lab31.exe
+  lab31.vcxproj -> C:\Users\jvarg\OneDrive\Documents\Visual Studio 2015\Projects\lab31\Debug\lab31.pdb (Full PDB)

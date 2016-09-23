@@ -1,0 +1,4 @@
+﻿  lab23Source.cpp
+c:\users\jvarg\onedrive\documents\visual studio 2015\projects\lab23.cpp\lab23.cpp\lab23source.cpp(47): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  lab23.cpp.vcxproj -> C:\Users\jvarg\OneDrive\Documents\Visual Studio 2015\Projects\lab23.cpp\Debug\lab23.cpp.exe
+  lab23.cpp.vcxproj -> C:\Users\jvarg\OneDrive\Documents\Visual Studio 2015\Projects\lab23.cpp\Debug\lab23.cpp.pdb (Full PDB)
