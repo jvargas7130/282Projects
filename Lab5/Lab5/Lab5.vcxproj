@@ -146,10 +146,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DateImp.cpp" />
     <ClCompile Include="EducationImp.cpp" />
     <ClCompile Include="EmployeeImp.cpp" />
+    <ClCompile Include="FacultyImp.cpp" />
     <ClCompile Include="Partime.cpp" />
     <ClCompile Include="StaffImp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Constant.h" />
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="Education.h" />
+    <ClInclude Include="Employee.h" />
+    <ClInclude Include="Faculty.h" />
+    <ClInclude Include="Parttime.h" />
+    <ClInclude Include="Staff.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
