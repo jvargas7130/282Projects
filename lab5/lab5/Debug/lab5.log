@@ -1,0 +1,4 @@
+﻿  StaffImp.cpp
+c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\staffimp.cpp(12): error C3867: 'Employee::monthlyEarnings': non-standard syntax; use '&' to create a pointer to member
+  EducationImp.cpp
+  Generating Code...
