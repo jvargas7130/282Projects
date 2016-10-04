@@ -27,6 +27,9 @@
     <ClCompile Include="StaffImp.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="Faculty.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Employee.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Education.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Faculty.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

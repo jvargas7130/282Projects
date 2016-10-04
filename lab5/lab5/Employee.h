@@ -23,7 +23,7 @@ public:
 	void putIdnumber(string Idnumber);
 	void putSex(char sex);
 
-	void putData();
+	virtual void putData();
 	virtual double monthlyEarnings() = 0;
 
 

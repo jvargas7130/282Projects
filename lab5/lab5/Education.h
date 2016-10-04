@@ -18,6 +18,7 @@ public:
 	void setMajor(string major);
 	void setResearch(int research);
 
+
 	 
 
 };
