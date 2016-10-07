@@ -8,5 +8,6 @@ void Faculty::putData()
 	cout << "ID Employee number :_________" << idNumber << endl;
 	cout << "Employee name: __________ " << firstName << " " << lastName << endl;
 	cout << "Birth date: _______ " << birthDate << endl;
-	cout << <<"Professor where "<< << 
+	//cout << <<"Professor where "<< << "can be Assistant, A"
+	cout < "Monthly Salary" <<  << endl;
 }
