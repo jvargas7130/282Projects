@@ -1,12 +1,13 @@
 #include <iostream>
 #include <iomanip>
-#include "Employee.h"
+
 class Staff: public Employee
 {
 protected:
 	int hourlyRate;
 
 public:
+	Staff(int hourlyRate = 0);
 	int gethourlyRate() const;
 	void putData();
 

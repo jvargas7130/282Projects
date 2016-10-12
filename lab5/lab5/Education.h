@@ -5,10 +5,16 @@
 //education class implementation
 class Education {
 protected:
-	string degree;
-	 string major;
-	 int research;
+	string degree = " ";
+	 string major = " ";
+	 int research = 0;
 public:
+	Education(string d, string m, int r ) {
+		degree = d;
+		major = m;
+		research = r;
+	}
+	Education();
 	string getDegree() const;
 	string getMajor() const;
 

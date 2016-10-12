@@ -25,3 +25,7 @@ void Education::setMajor(string major) {
 void Education ::setResearch(int research) {
 
 }
+
+Education::Education(string d, string m, int r) {
+
+}

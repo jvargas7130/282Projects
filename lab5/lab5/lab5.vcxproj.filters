@@ -30,6 +30,12 @@
     <ClCompile Include="Faculty.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="PartTime.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDriver.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Employee.h">
@@ -48,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Faculty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartTime.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

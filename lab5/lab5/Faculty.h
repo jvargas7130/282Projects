@@ -1,29 +1,29 @@
-#pragma once
+
 
 #include <iostream>
 #include <iomanip>
 #include "Employee.h"
 #include "Education.h"
-class Faculty:public Employee
+#include "Constant.h"
+class Faculty :public Employee
 {
 
 protected:
-	int level;
-
-	string AS = "assistant professor"; //assistant professor
-	string AO = "associate professor"; // associate professor
-	string FU = "professor"; // professor
-
-	Education e;
-
+	string level;
+	Education education;
+	double Constant::FACULTY_MONTHLY_SALARY;
 
 public:
-	int getLevel() const;
-	string getAS() const;
-	string getAO() const;
-	string getFU() const;
-	virtual void putData();
 
-	virtual double monthlyEarnings() = 0;
+	Faculty(string lN, string fN, string i, char s, Date b, string l, Education e) : Employee(lN, fN, i, s, b){
 
+		level = l;
+		education = e;
+
+	}
+
+	string getLevel();
+	void putData();
+
+ double monthlyEarnings();
 };

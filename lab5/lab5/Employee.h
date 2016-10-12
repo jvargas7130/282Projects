@@ -1,17 +1,32 @@
 #include <iostream>
 #include <iomanip>
+#include "Date.h"
 using namespace std;
-class Employee
+
+
+class Employee:public Date
 {
 
 protected:
-	string lastName;
-	string firstName;
-	string idNumber;
-	char sex;
-	string birthDate;
+	string lastName = "";
+	string firstName = "";
+	string idNumber = "";
+	char sex =  ' ';
+	Date birthDate;
+	
 
 public:
+	Employee(string lN, string fN, string i, char s,Date b) {
+		lastName = lN;
+		firstName = fN;
+		idNumber = i;
+		sex = s;
+		birthDate = b;
+	}
+	Employee();
+
+
+
 	string getlastName() const;
 	string getfirstName() const;
 	string getidNumber() const;
@@ -24,7 +39,7 @@ public:
 	void putSex(char sex);
 
 	virtual void putData();
-	virtual double monthlyEarnings() = 0;
+	 double monthlyEarnings();
 
 
 

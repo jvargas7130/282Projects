@@ -11,6 +11,7 @@ void Staff::putData() {
 	cout << "Full Time" << endl;
 	cout << "Monthly Salary" << monthlyEarnings << endl;
 
+
 }
 
 //staff hourly rate accessor

@@ -8,7 +8,8 @@ using namespace std;
 void Employee::putData() {
 	cout << "ID Employee number :_________" << idNumber << endl;
 	cout << "Employee name: __________ " << firstName << " " << lastName << endl;
-	cout << "Birth date: _______ " << birthDate << endl;
+	cout << "Sex: " << sex << endl;
+	cout << "Birth date: _______ " <<  day <<"/"<< month<< "/"<< year <<endl;
 }
 
 string Employee::getfirstName() const {
@@ -39,3 +40,6 @@ void Employee::putSex(char s) {
 	sex = s;
 }
 
+Employee::Employee(string firstName, string  lastName, string idNumber, char sex, Date birthdate) {
+
+}
