@@ -1,10 +1,16 @@
+#ifndef  EMPLOYEE_h
+#define  EMPLOYEE_h
+
+
 #include <iostream>
 #include <iomanip>
 #include "Date.h"
+#include "Constant.h"
+
 using namespace std;
 
 
-class Employee:public Date
+class Employee
 {
 
 protected:
@@ -16,22 +22,15 @@ protected:
 	
 
 public:
-	Employee(string lN, string fN, string i, char s,Date b) {
-		lastName = lN;
-		firstName = fN;
-		idNumber = i;
-		sex = s;
-		birthDate = b;
-	}
+	Employee(string lN, string fN, string iD, char s, Date b);
+	
 	Employee();
-
-
 
 	string getlastName() const;
 	string getfirstName() const;
 	string getidNumber() const;
 	char getSex() const;
-	int getbDate() const;
+	Date getbDate();
 
 	void putlastName(string lastName);
 	void putfirstName(string firstName);
@@ -39,12 +38,9 @@ public:
 	void putSex(char sex);
 
 	virtual void putData();
-	 double monthlyEarnings();
-
-
-
-
+	virtual double monthlyEarnings() = 0;
 
 };
 
 
+#endif;

@@ -1,8 +1,10 @@
+
 #include <iostream>
 #include <iomanip>
 #include "Staff.h"
 
-class PartTime :public Staff
+
+class PartTime :public Staff, public Constant
 {
 
 protected:
@@ -10,8 +12,10 @@ protected:
 
 
 public:
+	PartTime(string lN, string fN, string i, char s, Date b,double h, int hr);
+	PartTime();
 	int getHours();
 	void setHours(int hours);
-	virtual double monthlyEarnings() = 0;
+	 double monthlyEarnings();
 	 void putData();
 };

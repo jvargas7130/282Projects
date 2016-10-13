@@ -11,7 +11,7 @@ using namespace std;
 void cylinderType::print() const
 {
 	cout << "Base Center: ";
-	pointType::print();
+	//pointType::print();
 	cout << endl;
 	cout << "Base Radius" << radius<<endl;
 	cout << "Base Circumference" << getCircumference() << endl;

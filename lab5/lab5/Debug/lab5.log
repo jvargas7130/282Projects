@@ -1,28 +1,6 @@
-﻿  TestDriver.cpp
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\employee.h(7): error C2011: 'Employee': 'class' type redefinition
-  c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\employee.h(7): note: see declaration of 'Employee'
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\faculty.h(8): error C2504: 'Employee': base class undefined
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\faculty.h(17): error C2614: 'Faculty': illegal member initialization: 'Employee' is not a base or member
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\staff.h(5): error C2504: 'Employee': base class undefined
-  StaffImp.cpp
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\staffimp.cpp(12): error C3867: 'Employee::monthlyEarnings': non-standard syntax; use '&' to create a pointer to member
-  PartTime.cpp
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\employee.h(7): error C2011: 'Employee': 'class' type redefinition
-  c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\employee.h(7): note: see declaration of 'Employee'
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\parttime.cpp(10): error C2027: use of undefined type 'Employee'
-  c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\employee.h(7): note: see declaration of 'Employee'
+﻿  PartTime.cpp
   Faculty.cpp
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\employee.h(7): error C2011: 'Employee': 'class' type redefinition
-  c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\employee.h(7): note: see declaration of 'Employee'
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\faculty.h(8): error C2504: 'Employee': base class undefined
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\faculty.h(17): error C2614: 'Faculty': illegal member initialization: 'Employee' is not a base or member
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\faculty.cpp(31): error C2027: use of undefined type 'Employee'
-  c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\employee.h(7): note: see declaration of 'Employee'
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\faculty.cpp(37): error C2084: function 'Faculty::Faculty(std::string,std::string,std::string,char,Date,std::string,Education)' already has a body
-  c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\faculty.h(17): note: see previous definition of '{ctor}'
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\faculty.cpp(38): error C2614: 'Faculty': illegal member initialization: 'Employee' is not a base or member
   EmployeeImp.cpp
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\employeeimp.cpp(11): error C2059: syntax error: '<<'
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\employeeimp.cpp(42): error C2084: function 'Employee::Employee(std::string,std::string,std::string,char,Date)' already has a body
-  c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab5\lab5\employee.h(19): note: see previous definition of '{ctor}'
   Generating Code...
+  lab5.vcxproj -> C:\Users\jvarg\Documents\Visual Studio 2015\Projects\282Projects\lab5\Debug\lab5.exe
+  lab5.vcxproj -> C:\Users\jvarg\Documents\Visual Studio 2015\Projects\282Projects\lab5\Debug\lab5.pdb (Full PDB)

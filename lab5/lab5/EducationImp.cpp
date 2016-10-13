@@ -5,6 +5,10 @@
 
 using namespace std;
 
+Education::Education()
+{
+}
+
 string Education::getDegree() const {
 	return degree;
 }
@@ -26,6 +30,3 @@ void Education ::setResearch(int research) {
 
 }
 
-Education::Education(string d, string m, int r) {
-
-}

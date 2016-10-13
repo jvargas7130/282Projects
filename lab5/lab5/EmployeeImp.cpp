@@ -2,18 +2,32 @@
 #include <iomanip>
 #include<string>
 #include "Employee.h"
+
+
+
+
 using namespace std;
 
 
+
+
 void Employee::putData() {
-	cout << "ID Employee number :_________" << idNumber << endl;
-	cout << "Employee name: __________ " << firstName << " " << lastName << endl;
+
+	
+
+	cout << "Employee name: " << firstName << " " << lastName << endl;
+	cout << "ID Employee number : " << idNumber << endl;
 	cout << "Sex: " << sex << endl;
-	cout << "Birth date: _______ " <<  day <<"/"<< month<< "/"<< year <<endl;
+	cout << "Birth date: "<< getbDate().getDay() <<"/"<< getbDate().getMonth()  <<"/"<< getbDate().getYear()<< endl;
+
 }
 
 string Employee::getfirstName() const {
 	return firstName;
+}
+
+Employee::Employee()
+{
 }
 
 string Employee::getlastName() const {
@@ -40,6 +54,22 @@ void Employee::putSex(char s) {
 	sex = s;
 }
 
-Employee::Employee(string firstName, string  lastName, string idNumber, char sex, Date birthdate) {
-
+char Employee:: getSex() const {
+	return sex;
 }
+	
+Date Employee::getbDate() {
+	return birthDate;
+}
+
+Employee::Employee(string lN, string fN, string iD, char s, Date b) {
+	lastName = lN;
+	firstName = fN;
+	idNumber = iD;
+	//sex = s;
+	birthDate = b;
+	sex = s;
+}
+
+
+

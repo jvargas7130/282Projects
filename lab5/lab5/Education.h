@@ -1,3 +1,6 @@
+#ifndef  EDUCATION_h
+#define  EDUCATION_h
+
 #include<iomanip>
 #include<iostream>
 #include"Employee.h"
@@ -24,7 +27,5 @@ public:
 	void setMajor(string major);
 	void setResearch(int research);
 
-
-	 
-
 };
+#endif;
