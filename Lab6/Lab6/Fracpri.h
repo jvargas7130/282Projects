@@ -38,6 +38,10 @@ public:
 	Fracpri operator * (const Fracpri& f);
 	Fracpri operator / (const Fracpri& f);
 
+
+
+
+
 	/*g. Create  two overloaded arithmetic operators which allows the fracpri class to be able 
 	to add a constant integer value to a fracpri object such as this:
 	F3 = 5 + F1; or add a fracpri object to a constant integer value as shown below:
