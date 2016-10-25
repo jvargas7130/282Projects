@@ -40,7 +40,7 @@ public:
 
 
 
-	void properFraction();
+	//void properFraction();
 
 	/*g. Create  two overloaded arithmetic operators which allows the fracpri class to be able 
 	to add a constant integer value to a fracpri object such as this:
@@ -59,8 +59,8 @@ public:
 
 
 	//l.Overload the input / output(cin / cout) operators.
-	friend istream operator >> (istream& in, Fracpri f);
-	friend ostream operator << (ostream& out, Fracpri f);
+	friend istream& operator >> (istream& in, Fracpri& f);
+	friend ostream& operator << (ostream& out, Fracpri& f);
 		
 
 

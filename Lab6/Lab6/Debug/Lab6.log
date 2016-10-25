@@ -1,3 +1,7 @@
-﻿  Fracpri.cpp
+﻿  FracpriTest.cpp
+  Fracpri.cpp
+  Generating Code...
+c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab6\lab6\fracpri.cpp(130): warning C4717: 'Fracpri::operator<': recursive on all control paths, function will cause runtime stack overflow
+c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab6\lab6\fracpri.cpp(138): warning C4717: 'operator+=': recursive on all control paths, function will cause runtime stack overflow
   Lab6.vcxproj -> C:\Users\jvarg\Documents\Visual Studio 2015\Projects\282Projects\Lab6\Debug\Lab6.exe
   Lab6.vcxproj -> C:\Users\jvarg\Documents\Visual Studio 2015\Projects\282Projects\Lab6\Debug\Lab6.pdb (Full PDB)

@@ -1,6 +1,7 @@
 #include "Fracpri.h"
 #include<iostream>
 #include<iomanip>
+#include <string>
 using namespace std;
 
 //a.a zero argument contructor
@@ -116,12 +117,16 @@ Fracpri operator + (int num, const Fracpri& f)
 
 Fracpri operator + (const Fracpri& f, int num)
 {
+	int num1 = f.whole * f.denom + f.numer;
+	int num2 = num *f.denom + num1;
 
+
+	return Fracpri(0, num2, f.denom);
 }
 //h. Overload the < operator.
 bool Fracpri::operator < (const Fracpri& f)
 {
-
+	return *this < f;
 }
 
 
@@ -129,17 +134,26 @@ bool Fracpri::operator < (const Fracpri& f)
 //k.Overload the += operator.
 Fracpri operator += (const Fracpri& f, int num)
 {
-
+	return f += num;
 }
 
 //l.Overload the input / output(cin / cout) operators.
-istream operator >> (istream& in, Fracpri f)
+istream& operator >> (istream &in, Fracpri &f)
 {
-
+	cout << "Enter whole number" << endl;
+	in >> f.whole;
+	cout << "Enter numerator " << endl;
+	in >> f.numer;
+	cout << "Enter denominator" << endl;
+	in >> f.denom;
+	return in;
 }
-ostream operator << (ostream& out, Fracpri f)
-{
 
+ostream& operator << (ostream& out, Fracpri& f)
+{
+	out << "whole: " << f.whole << endl;
+	out << "fraction: " << f.numer << "/" << f.denom << endl;
+	return out;
 }
 
 
@@ -155,9 +169,11 @@ You can assume that the denominator of a fraction never be smaller than 64. The 
 - denom = 64.
 */
 
+/*
 Fracpri::Fracpri(float f)
 {
-
+	float flofrac = f - f.whole
+		numer = flofrac * 64;
 }
 
 
@@ -166,4 +182,4 @@ Fracpri::operator float() const
 
 }
 
-
+*/
