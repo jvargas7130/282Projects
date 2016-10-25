@@ -18,6 +18,9 @@
     <ClCompile Include="Fracpri.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="FracpriTest.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fracpri.h">

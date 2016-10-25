@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Fracpri.cpp" />
+    <ClCompile Include="FracpriTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Fracpri.h" />

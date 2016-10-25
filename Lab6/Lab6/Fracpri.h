@@ -20,7 +20,7 @@ public:
 
 	/* c. A getFraction function to input the fracpri object 
 	from the keyboard with the input format: whole-numerator-denominator. */
-	Fracpri getFraction();
+	void getFraction();
 
 
 	/* d. A showFraction function to show the fracpri object with the output format: whole   numerator/denominator.*/
@@ -40,7 +40,7 @@ public:
 
 
 
-
+	void properFraction();
 
 	/*g. Create  two overloaded arithmetic operators which allows the fracpri class to be able 
 	to add a constant integer value to a fracpri object such as this:
