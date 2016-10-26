@@ -65,10 +65,10 @@ Fracpri Fracpri::addFracpri(const Fracpri f1, const Fracpri f2)
 
 Fracpri Fracpri::operator + (const Fracpri& f1)
 {
-	int num1 =  f1.whole * f1.denom + f1.numer;
-	int num2 =  this -> whole *  this -> denom + this -> numer;
+	int num1 =  (f1.whole * f1.denom) + f1.numer;
+	int num2 =  (this -> whole *  this -> denom) + this -> numer;
 
-	int addNum = this -> denom * num1 + this -> denom * num2;
+	int addNum = (this -> denom * num1) + ( f1.denom * num2);
 	int resultD = f1.denom * this -> denom;
 
 	return properFraction(addNum, resultD);
@@ -94,22 +94,22 @@ Fracpri Fracpri::operator * (const Fracpri& f)
 	int num1 = f.whole * f.denom + f.numer;
 	int num2 = this->whole * (this->denom) + this->numer;
 
-	int subNum = f.denom * num1 * this->denom * num2;
+	int prodNum = num1 * num2;
 	int resultD = f.denom * this->denom;
 
 
-	return  properFraction(subNum, resultD);;
+	return  properFraction(prodNum, resultD);;
 }
 Fracpri Fracpri::operator / (const Fracpri& f)
 {
 	int num1 = f.whole * f.denom + f.numer;
-	int num2 = this->whole * (this->denom) + this->numer;
+	int num2 = this->whole * this->denom + this->numer;
 
-	int subNum = f.denom * num1 * this->denom;
-	int resultD = f.denom *this->denom * num2;
+	int divNum =  f.denom * num2;
+	int resultD = num1 * this->denom;
 
 
-	return  properFraction(subNum, resultD);;
+	return  properFraction(divNum, resultD);;
 }
 
 /*g. Create  two overloaded arithmetic operators which allows the fracpri class to be able
@@ -129,8 +129,6 @@ Fracpri operator + ( Fracpri& f,  int num)
 
 Fracpri operator + ( int num, const Fracpri& f)
 {
-	
-
 
 	return Fracpri(f.whole + num, f.numer, f.denom);
 }
@@ -153,6 +151,8 @@ bool Fracpri::operator < (const Fracpri& f)
 //k.Overload the += operator.
 Fracpri operator += (const Fracpri& f, int num)
 {
+	
+	cout << "what" << f.whole + num << endl;
 	return Fracpri(f.whole + num,f.numer, f.denom);
 }
 
@@ -208,19 +208,22 @@ Fracpri::operator float() const
 
 // Improper fraction to proper fraction
 Fracpri Fracpri::properFraction(int numer, int denom) {
+
 	int whole = 0;
+	int numerTemp = numer;
 
-
-	while (numer > denom) {
+	while (numerTemp > denom) {
 		whole++;
-		numer = numer - denom;
+		numerTemp = numerTemp - denom;
+	
 	}
 
-	if (numer = denom) {
+	if (numerTemp == denom) {
 		whole++;
 	}
-	lowestTerms(Fracpri& f);
-	return Fracpri(whole, numer, denom);
+
+	lowestTerms(Fracpri(whole, numer, denom));
+	return Fracpri(whole, numerTemp, denom);
 }
 
 

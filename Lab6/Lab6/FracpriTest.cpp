@@ -74,7 +74,7 @@ int main()
 		cout << "R1 is less than R2" << endl;
 	}
 	else {
-		cout << "NOOOOOO!!!" << endl;
+		cout << "No" << endl;
 	}
 	
 	/*	11.	Perform the arithmetic operation below.Display R3 using overloading cout
@@ -82,7 +82,9 @@ int main()
 
 	cout << "Increment by 10" << endl;
 	R3 += 10;
-	R3.showFractions();
+	cout << R3;
+
+
 
 	/*	12.	Perform the arithmetic operation below.Display R3 using overloading cout
 		input  a number of type float  
