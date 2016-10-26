@@ -26,6 +26,8 @@ public:
 	/* d. A showFraction function to show the fracpri object with the output format: whole   numerator/denominator.*/
 	void showFractions();
 
+	// Improper fraction to proper fraction
+	Fracpri properFraction(int numer, int denom);
 
 
 	/*. e.  Create a function called addfracts which adds two fracpri objects together. 
@@ -46,9 +48,9 @@ public:
 	to add a constant integer value to a fracpri object such as this:
 	F3 = 5 + F1; or add a fracpri object to a constant integer value as shown below:
                                         F3 = F1 +  5; */
+	friend Fracpri operator + ( Fracpri& f1, int num);
+	friend Fracpri operator + (int num,  const Fracpri& f );
 
-	friend Fracpri operator + (int num, const Fracpri& f );
-	friend Fracpri operator + (const Fracpri& f, int num);
 
 	//h. Overload the < operator.
 	bool operator < (const Fracpri& f);
@@ -78,8 +80,13 @@ public:
 	Fracpri(float f);
 
 
-	operator float() const;
+	 operator float() const;
 
+
+	 //fractions in lowest terms
+	 void  lowestTerms(Fracpri& f);
+	
+	 
 
 
 };

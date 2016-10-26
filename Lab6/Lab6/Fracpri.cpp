@@ -1,7 +1,7 @@
 #include "Fracpri.h"
 #include<iostream>
 #include<iomanip>
-#include <string>
+
 using namespace std;
 
 //a.a zero argument contructor
@@ -36,9 +36,12 @@ void Fracpri::getFraction()
 /* d. A showFraction function to show the fracpri object with the output format: whole   numerator/denominator.*/
 void Fracpri::showFractions() 
 {
-	cout << "whole" << whole << endl;
-	cout << "fraction" << numer << "/" << denom << endl;
+	
+	cout << "fraction:: " << whole << " " << numer << "/" << denom << endl;
 }
+
+
+
 
 /*. e.  Create a function called addfracts which adds two fracpri objects together.
 That is , a member function will add two fracpri objects  given as arguments, and return the sum of them.*/
@@ -50,21 +53,29 @@ Fracpri Fracpri::addFracpri(const Fracpri f1, const Fracpri f2)
 	int addNum = f2.denom * num1 + f1.denom * num2 ;
 	int resultD = f1.denom * f2.denom;
 
+
+	return  properFraction( addNum, resultD);
 	
-	return Fracpri(0,addNum, resultD);
-	
-}
+} 
 
 
 
 // f. Overload the addition, subtraction, multiplication and division for the fracpri class.
 //& passing the adrress to the operator
 
-Fracpri Fracpri::operator + (const Fracpri& f)
+Fracpri Fracpri::operator + (const Fracpri& f1)
 {
-	return addFracpri(*this,f);
+	int num1 =  f1.whole * f1.denom + f1.numer;
+	int num2 =  this -> whole *  this -> denom + this -> numer;
+
+	int addNum = this -> denom * num1 + this -> denom * num2;
+	int resultD = f1.denom * this -> denom;
+
+	return properFraction(addNum, resultD);
 
 }
+
+
 Fracpri Fracpri::operator - (const Fracpri& f)
 {
 	int num1 = f.whole * f.denom + f.numer;
@@ -74,7 +85,7 @@ Fracpri Fracpri::operator - (const Fracpri& f)
 	int resultD = f.denom * this -> denom;
 
 
-	return Fracpri(0, subNum, resultD);
+	return  properFraction(subNum, resultD);;
 }
 
 
@@ -87,7 +98,7 @@ Fracpri Fracpri::operator * (const Fracpri& f)
 	int resultD = f.denom * this->denom;
 
 
-	return Fracpri(0, subNum, resultD);
+	return  properFraction(subNum, resultD);;
 }
 Fracpri Fracpri::operator / (const Fracpri& f)
 {
@@ -98,7 +109,7 @@ Fracpri Fracpri::operator / (const Fracpri& f)
 	int resultD = f.denom *this->denom * num2;
 
 
-	return Fracpri(0, subNum, resultD);
+	return  properFraction(subNum, resultD);;
 }
 
 /*g. Create  two overloaded arithmetic operators which allows the fracpri class to be able
@@ -106,36 +117,45 @@ to add a constant integer value to a fracpri object such as this:
 F3 = 5 + F1; or add a fracpri object to a constant integer value as shown below:
 F3 = F1 +  5; */
 
-Fracpri operator + (int num, const Fracpri& f)
+
+
+
+
+Fracpri operator + ( Fracpri& f,  int num)
 {
-	int num1 = f.whole * f.denom + f.numer;
-	int num2 = num *f.denom + num1;
 
-
-	return Fracpri(0, num2, f.denom);
+	return  Fracpri(f.whole + num, f.numer, f.denom);
 }
 
-Fracpri operator + (const Fracpri& f, int num)
+Fracpri operator + ( int num, const Fracpri& f)
 {
-	int num1 = f.whole * f.denom + f.numer;
-	int num2 = num *f.denom + num1;
+	
 
 
-	return Fracpri(0, num2, f.denom);
+	return Fracpri(f.whole + num, f.numer, f.denom);
 }
+
+
+
+
+
 //h. Overload the < operator.
 bool Fracpri::operator < (const Fracpri& f)
 {
-	return *this < f;
-}
+	if (this ->whole == f.whole) {
+		return (this -> numer * f.denom) < (this -> denom * f.numer);
+	}
 
+	return this->whole < f.whole;
+}
 
 
 //k.Overload the += operator.
 Fracpri operator += (const Fracpri& f, int num)
 {
-	return f += num;
+	return Fracpri(f.whole + num,f.numer, f.denom);
 }
+
 
 //l.Overload the input / output(cin / cout) operators.
 istream& operator >> (istream &in, Fracpri &f)
@@ -151,8 +171,7 @@ istream& operator >> (istream &in, Fracpri &f)
 
 ostream& operator << (ostream& out, Fracpri& f)
 {
-	out << "whole: " << f.whole << endl;
-	out << "fraction: " << f.numer << "/" << f.denom << endl;
+	cout << "fraction: " << f.whole << " " << f.numer << "/" << f.denom << endl;
 	return out;
 }
 
@@ -169,17 +188,69 @@ You can assume that the denominator of a fraction never be smaller than 64. The 
 - denom = 64.
 */
 
-/*
+
 Fracpri::Fracpri(float f)
 {
-	float flofrac = f - f.whole
+
+	whole = f;
+
+	float flofrac = f - whole;
 		numer = flofrac * 64;
+		denom = 64;
 }
 
 
 Fracpri::operator float() const
 {
-
+	float num = whole + (numer / (float) denom);
+	return num;
 }
 
-*/
+// Improper fraction to proper fraction
+Fracpri Fracpri::properFraction(int numer, int denom) {
+	int whole = 0;
+
+
+	while (numer > denom) {
+		whole++;
+		numer = numer - denom;
+	}
+
+	if (numer = denom) {
+		whole++;
+	}
+	lowestTerms(Fracpri& f);
+	return Fracpri(whole, numer, denom);
+}
+
+
+void  Fracpri::lowestTerms(Fracpri& f)
+{
+	int a = 0;
+	int b = 0;
+
+	if (f.numer > f.denom)
+	{
+		a = f.numer;
+		b = f.denom;
+	}
+	else
+	{
+		a = f.denom;
+		b = f.numer;
+	}
+	int q = a / b;
+	int r = a%b;
+	
+
+	while (b > 0) {
+		a = q*b + r;
+		a = b;
+		b = r;
+	}
+
+     f.numer /= a;
+	 f.denom /= a; 
+
+	
+}
