@@ -5,8 +5,8 @@
 
 class Polar {
 protected:
-	double radius;
-	double angle;
+	double radius = 0.0;
+	double angle = 0.0;
 public:
 	Polar();
 	Polar(double radius, double amgle);

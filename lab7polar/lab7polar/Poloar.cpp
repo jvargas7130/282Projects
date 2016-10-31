@@ -51,7 +51,7 @@ Polar Polar::operator + (const Polar& f) {
 
 
 	//switch back to polar
-	double r = sqrt(newX + newY);
+	double r = sqrt(pow(newX,2) + pow(newY,2));
 	double theta = atan(newX / newY);
 
 	return Polar(r, theta);

@@ -148,9 +148,11 @@
   <ItemGroup>
     <ClCompile Include="PolarTest.cpp" />
     <ClCompile Include="Poloar.cpp" />
+    <ClCompile Include="Safearray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Polar.h" />
+    <ClInclude Include="Safearray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
