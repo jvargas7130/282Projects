@@ -146,11 +146,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cartesian.cpp" />
     <ClCompile Include="PolarTest.cpp" />
     <ClCompile Include="Poloar.cpp" />
     <ClCompile Include="Safearray.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cartesian.h" />
     <ClInclude Include="Polar.h" />
     <ClInclude Include="Safearray.h" />
   </ItemGroup>

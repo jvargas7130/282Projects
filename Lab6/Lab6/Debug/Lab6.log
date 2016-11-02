@@ -1,5 +1,2 @@
-﻿  Fracpri.cpp
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab6\lab6\fracpri.cpp(195): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab6\lab6\fracpri.cpp(198): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-  Lab6.vcxproj -> C:\Users\jvarg\Documents\Visual Studio 2015\Projects\282Projects\Lab6\Debug\Lab6.exe
+﻿  Lab6.vcxproj -> C:\Users\jvarg\Documents\Visual Studio 2015\Projects\282Projects\Lab6\Debug\Lab6.exe
   Lab6.vcxproj -> C:\Users\jvarg\Documents\Visual Studio 2015\Projects\282Projects\Lab6\Debug\Lab6.pdb (Full PDB)

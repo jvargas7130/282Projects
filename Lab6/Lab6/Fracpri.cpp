@@ -149,11 +149,17 @@ bool Fracpri::operator < (const Fracpri& f)
 
 
 //k.Overload the += operator.
-Fracpri operator += (const Fracpri& f, int num)
+Fracpri Fracpri::operator += (int num)
 {
-	
-	cout << "what" << f.whole + num << endl;
-	return Fracpri(f.whole + num,f.numer, f.denom);
+	Fracpri result;
+
+
+	this->whole += num;
+	result.whole= this->whole;
+	result.numer = this->numer;
+	result.denom = this->denom;
+
+		return result;
 }
 
 
@@ -222,12 +228,11 @@ Fracpri Fracpri::properFraction(int numer, int denom) {
 		whole++;
 	}
 
-	lowestTerms(Fracpri(whole, numer, denom));
-	return Fracpri(whole, numerTemp, denom);
+	return lowestTerms(Fracpri(whole, numer, denom));
 }
 
 
-void  Fracpri::lowestTerms(Fracpri& f)
+Fracpri   Fracpri::lowestTerms(Fracpri& f)
 {
 	int a = 0;
 	int b = 0;
@@ -242,18 +247,20 @@ void  Fracpri::lowestTerms(Fracpri& f)
 		a = f.denom;
 		b = f.numer;
 	}
-	int q = a / b;
-	int r = a%b;
+
 	
 
 	while (b > 0) {
+
+	int q = a / b;
+	int r = a%b;
 		a = q*b + r;
 		a = b;
 		b = r;
 	}
 
-     f.numer /= a;
-	 f.denom /= a; 
+   int newN =  f.numer /= a;
+	int newD =  f.denom /= a; 
 
-	
+	 return Fracpri(f.whole,newN, newD );
 }

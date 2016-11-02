@@ -56,8 +56,8 @@ public:
 	bool operator < (const Fracpri& f);
 
 
-	//k.Overload the += operator.
-	friend Fracpri operator += (const Fracpri& f, int num);
+	//k.Overload he += operator.
+	 Fracpri operator += (int num);
 
 
 	//l.Overload the input / output(cin / cout) operators.
@@ -84,7 +84,7 @@ public:
 
 
 	 //fractions in lowest terms
-	 void  lowestTerms(Fracpri& f);
+	 Fracpri lowestTerms(Fracpri& f);
 	
 	 
 

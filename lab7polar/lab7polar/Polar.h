@@ -2,12 +2,16 @@
 #define  POLAR_h
 
 #include<iostream>
+#include"Cartesian.h"
 
+class Cartesian;
 class Polar {
 protected:
 	double radius = 0.0;
 	double angle = 0.0;
 public:
+
+
 	Polar();
 	Polar(double radius, double amgle);
 
@@ -17,6 +21,8 @@ public:
 	void display();
 
 	Polar operator + (const Polar& f);
+
+
 
 
 };

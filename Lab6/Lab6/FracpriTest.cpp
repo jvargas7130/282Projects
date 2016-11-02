@@ -83,6 +83,7 @@ int main()
 	cout << "Increment by 10" << endl;
 	R3 += 10;
 	cout << R3;
+	cout << R3;
 
 
 

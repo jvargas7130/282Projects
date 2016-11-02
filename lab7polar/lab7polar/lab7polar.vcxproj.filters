@@ -24,12 +24,18 @@
     <ClCompile Include="Safearray.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="Cartesian.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Polar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Safearray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cartesian.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
