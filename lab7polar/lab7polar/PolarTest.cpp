@@ -4,6 +4,7 @@
 #include <iomanip>
 #include<string>
 #include "Polar.h"
+#include "Safearray.h"
 using namespace std;
 
 
@@ -18,6 +19,21 @@ int main()
 	cout << "\np2="; p2.display();
 	cout << "\np3="; p3.display();
 	cout << endl;
+
+
+	//***************************
+	//array
+	int a[] = { 12,4,7,8,15 };
+	Safearray  as(a);
+
+	as[2] = 10;
+	as.print();
+
+	as[6] = 5;
+	as.print();
+	
+
+		
 
 	system("pause");
 	return 0;

@@ -7,14 +7,17 @@
 class Safearray
 {
 protected:
-	int upperbound;
-	int lowerbound;
+	int arr[5];
 
 
 public:
 	Safearray();
-	Safearray(int upperbound, int lowerbound);
+	Safearray(int p[5]);
 
+	int &operator[](int);
+
+	void print();
+	
 
 
 };
