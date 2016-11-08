@@ -1,0 +1,5 @@
+﻿  Person.cpp
+c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab8arraypointers\lab8arraypointers\person.cpp(39): error C2227: left of '->getName' must point to class/struct/union/generic type
+  c:\users\jvarg\documents\visual studio 2015\projects\282projects\lab8arraypointers\lab8arraypointers\person.cpp(39): note: type is 'Person **'
+  ArraypointesTester.cpp
+  Generating Code...
