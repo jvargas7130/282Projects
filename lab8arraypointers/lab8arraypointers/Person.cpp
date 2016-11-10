@@ -1,13 +1,16 @@
 #include "Person.h"
 #include <iostream>
+#include <string>
 
 
 using namespace std;
 
 void Person::setPerson()
 {
-	cout << "Name:" << endl;
+	cout << "Name: ";
 	cin >> name;
+	cout << "salary: ";
+	cin >> salary;
 }
 
 string Person::getName()
@@ -22,25 +25,4 @@ float Person::getSalary()
 }
 
 
-void Person::bsort(Person **p, int n, bool s)
-{
-	for (int j = 0; j < n -1; j++)
-	{
-		for (int k = j + 1; k<n; k++)
-		{
-			order(p + j, p + k);
-		}
-	}
 
-}
-
-void Person::order(Person **p1, Person **p2)
-{
-	if (*p1->getName() > *p2->getName())
-	{
-		Person *temp = *p1;
-		*p1 = *p2;
-		*p2 = temp;
-	}
-
-}

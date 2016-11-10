@@ -17,10 +17,6 @@ public:
 	string getName();
 	float getSalary();
 
-	void bsort(Person **, int n, bool s);
-
-	void order(Person **, Person **);
-
 
 
 
