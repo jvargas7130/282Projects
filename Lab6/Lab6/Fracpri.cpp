@@ -121,7 +121,7 @@ F3 = F1 +  5; */
 
 
 
-Fracpri operator + ( Fracpri& f,  int num)
+Fracpri operator + ( Fracpri& f,  float num)
 {
 
 	return  Fracpri(f.whole + num, f.numer, f.denom);
