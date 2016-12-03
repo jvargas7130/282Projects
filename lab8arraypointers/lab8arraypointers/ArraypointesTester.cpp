@@ -47,6 +47,7 @@ int main()
 	bsort(perptr, n, true);
 
 	//display sorted person objects
+	cout << "By Alphabetical order" << endl;
 	for (int i = 0; i < n; i++)
 	{
 		cout << perptr[i]->getName() << endl;
@@ -58,9 +59,10 @@ int main()
 	bsort(perptr, n, false);
 
 	//display sorted person objects
+	cout << "By salary" << endl;
 	for (int i = 0; i < n; i++)
 	{
-		cout << perptr[i]->getName() << endl;
+		cout << perptr[i]->getName() << "  salary:"<< perptr[i]->getSalary() << endl;
 	}
 
 
