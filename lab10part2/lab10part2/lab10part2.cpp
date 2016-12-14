@@ -1,3 +1,7 @@
+//Jesus Vargas
+// CECS 282 LAB 10 part 2
+
+
 // sorts person objects stored by pointer
 #include <iostream>
 #include <set>
@@ -89,24 +93,7 @@ int main()
 
 	for_each(setPtrsPers.begin(),               //display vector 
 		setPtrsPers.end(), displayPerson());
-	//sort pointers
-	//sort(setPtrsPers.begin(), setPtrsPers.end());
-	//cout << "\n\nSorted pointers";
-	//for_each(setPtrsPers.begin(),               //display vector 
-	//	setPtrsPers.end(), displayPerson());
-	/*
-	sort(vectPtrsPers.begin(),                  //sort persons
-		vectPtrsPers.end(), comparePersons());
-	cout << "\n\nSorted persons";
-	for_each(vectPtrsPers.begin(),               //display vector 
-		vectPtrsPers.end(), displayPerson());
-	while (!vectPtrsPers.empty())
-	{
-		delete vectPtrsPers.back();               //delete person
-		vectPtrsPers.pop_back();                  //pop pointer
-	}
-	cout << endl;
-	*/
+	
 	return 0;
 }  // end main()
 

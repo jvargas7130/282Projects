@@ -1,3 +1,7 @@
+//Jesus Vargas
+// CECS 282 LAB #9
+
+
 #include <iomanip>
 #include <iostream>
 
@@ -17,11 +21,11 @@ int main() {
 
 
 //Input the row size and column size for matrix M1 and M2
-	cout << "Enter M1" << endl;
+	cout << "Enter Matrix1" << endl;
 	cin >> rows1 >> cols1;
 	float* ptr1 = allocate( rows1,  cols1);
 
-	cout << "Enter M1" << endl;
+	cout << "Enter Matrix2" << endl;
 	cin >> rows2 >> cols2;
 
 
